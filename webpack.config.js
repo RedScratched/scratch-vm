@@ -6,6 +6,7 @@ const base = {
     mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
     devServer: {
         contentBase: false,
+        disableHostCheck: true,
         host: '0.0.0.0',
         port: process.env.PORT || 8073
     },
